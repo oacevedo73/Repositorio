@@ -1,0 +1,17 @@
+public class FakeBinary {
+    public static String fakeBin(String numberString) {
+        char[] c = numberString.toCharArray();
+        char[] s = numberString.toCharArray();
+        for(int x=0;x<numberString.length();x++) {
+          if(c[x]<5){
+          s[x]=0;
+          }
+          else{
+          s[x]=1;
+        }
+        }
+        String sal = String.valueOf(s);
+        return sal;
+    
+  }
+}
